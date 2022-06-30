@@ -26,7 +26,7 @@ export const verifyUserEmail = async (userInfo) => {
 
 export const signInUser = async (userInfo) => {
   try {
-    const { data } = await client.post("/user/sign-in", userInfo);
+    const { data } = await client.post("/user/login", userInfo);
     return data;
   } catch (error) {
     const { response } = error;

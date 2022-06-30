@@ -1,5 +1,5 @@
 const crypto = require("crypto");
-const cloudinary = require("../cloud");
+const cloudinary = require("../config/cloud");
 const Review = require("../models/review");
 
 exports.sendError = (res, error, statusCode = 401) => {

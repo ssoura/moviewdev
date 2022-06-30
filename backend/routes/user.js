@@ -21,7 +21,7 @@ const {
 const router = express.Router();
 
 router.post("/create", userValidtor, validate, create);
-router.post("/sign-in", signInValidator, validate, signIn);
+router.post("/login", signInValidator, validate, signIn);
 router.post("/verify-email", verifyEmail);
 router.post("/resend-email-verification-token", resendEmailVerificationToken);
 router.post("/forget-password", forgetPassword);

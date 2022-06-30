@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { deleteMovie, getMovieForUpdate, getMovies } from "../../api/movie";
 import { useMovies, useNotification } from "../../hooks";
 import ConfirmModal from "../modals/ConfirmModal";

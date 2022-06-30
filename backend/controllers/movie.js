@@ -6,7 +6,7 @@ const {
   getAverageRatings,
   topRatedMoviesPipeline,
 } = require("../utils/helper");
-const cloudinary = require("../cloud");
+const cloudinary = require("../config/cloud");
 const Movie = require("../models/movie");
 const Review = require("../models/review");
 const mongoose = require("mongoose");

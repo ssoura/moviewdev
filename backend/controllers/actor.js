@@ -5,7 +5,7 @@ const {
   formatActor,
 } = require("../utils/helper");
 const { isValidObjectId } = require("mongoose");
-const cloudinary = require("../cloud");
+const cloudinary = require("../config/cloud");
 
 exports.createActor = async (req, res) => {
   const { name, about, gender } = req.body;
